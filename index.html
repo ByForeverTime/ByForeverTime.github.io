@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +20,9 @@
     <link rel="alternative" href="/atom.xml" title="Time博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/boke.ico">
   
+
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
   
@@ -32,7 +35,6 @@
   
 
 </head>
-
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -42,7 +44,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/touxiang.gif" class="js-avatar">
+			<img src="/img/touxiang.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Time</a></h1>
@@ -54,7 +56,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -98,7 +100,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/touxiang.gif" class="js-avatar">
+				<img src="/img/touxiang.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Time</h1>
@@ -130,7 +132,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -146,6 +148,149 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="选课软件1.0-python" class="article article-type-选课软件1.0  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/07/python/">python</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/07/python/" class="archive-article-date">
+  	<time datetime="2019-12-07T04:57:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>def zhuanhua(str_):#把数字字符串转化为整形或者浮点型<br>    str__=[str_]<br>    for i in str_:<br>        if(i==”.”):#如果存在小数点则为小数<br>            return list(map(float,str__))<br>        #不然就为整数<br>    return list(map(int,str__))</p>
+<p>def panduan(xuehao):#判断账号在不在01-49<br>    for i in range(2019754201,2019754250):<br>            if(i==xuehao):<br>                return 1<br>                break<br>    return 0</p>
+<p>Schuchun={}#字典来储存学生学分     学号:学分<br>class student():<br>    def <strong>init</strong>(first,xingming,xuehao,banji):#学生姓名，学号，班级，学生学分<br>        first.xingming=xingming<br>        first.xuehao=xuehao<br>        first.banji=banji<br>    def chaxun(first):<br>        print(“姓名:”,first.xingming,”学号:”,first.xuehao,”班级:”,first.banji)<br>    def xuefen(first,fengshu):<br>        chuchun[first.xingming]=fengshu</p>
+<p>Tchuchun={}#字典储存老师科目学分     编号:学分<br>xingxi0={}#字典储存老师信息           编号:姓名+学科<br>class teacher():<br>    def <strong>init</strong>(first,xingming,xueke,bianhao,xuefen):#老师姓名，编号，学科，课程学分<br>        first.xingming=xingming<br>        first.bianhao=bianhao<br>        first.xueke=xueke<br>        first.xuefen=xuefen<br>        first.renshu=0<br>    def chaxun(first):<br>        print(“老师:”,first.xingming,”所教学科:”,first.xueke,”学分:”,first.xuefen,”学科编号:”,first.bianhao)<br>    def people(first):<br>        first.renshu=first.renshu+1<br>        #print(“老师:”,first.xingming,” 人数”,first.renshu)<br>    def xuefeng(first):<br>        Tchuchun[first.bianhao]=first.xuefen<br>    def xingxi(first):<br>        xingxi0[first.bianhao]=”姓名:”+first.xingming+”，学科:”+first.xueke</p>
+<p>a=teacher(“仇敬东”,”语文”,”001”,0.5)<br>b=teacher(“高晓妹”,”高数”,”002”,0.5)<br>c=teacher(“雷虹”,”英语”,”003”,0.5)<br>d=teacher(“王娜”,”C语言”,”004”,0.5)</p>
+<p>a.xuefeng();b.xuefeng();c.xuefeng();d.xuefeng();#把老师编号和学分集中在一个字典Tchuchun={}中{“编号”:”学分”}<br>a.xingxi();b.xingxi();c.xingxi();d.xingxi();</p>
+<p>while(1):<br>    print(“—————-欢迎进入选课页面————-“)<br>    print(“|                —身份确认—              |”)<br>    print(“|                   学生按“1”              |”)<br>    print(“|                   教师按“2”              |”)<br>    print(“|                   关闭按“3”              |”)<br>    print(“———————————————-“)<br>    change=int(input(“请输入:”))</p>
+<pre><code>while(not 0&lt;change&lt;4):
+    print(&quot;判断失败！学生按“1”，老师按“2”，关闭软件按“3”&quot;)
+    change=int(input(&quot;请输入:&quot;))
+if(change==9):
+    quit()
+else:
+    if(change==1):
+        print(&quot;欢迎进入学生页面&quot;)
+        print(&quot;请输入你的学号&quot;)#账号为学号
+        学号=int(input(&quot;学号:&quot;))
+        while(panduan(学号)==0):
+            print(&quot;登入失败，请重新输入！&quot;)
+            学号=int(input(&quot;学号:&quot;))
+        print(&quot;登入成功&quot;)
+        print(&quot;请完善你的信息&quot;)
+
+        judge0=&quot;Y&quot;
+        while(judge0==&quot;Y&quot;):
+            name=input(&quot;姓名:&quot;)
+            banji=input(&quot;班级:&quot;)
+            student1=student(name,学号,banji)
+            print(&quot;你的信息为，检查是否无误.&quot;)
+            student1.chaxun()
+            judge0=input(&quot;如有问题，请按Y重新输入,没问题按任意键:&quot;)
+
+        judge1=&quot;Y&quot;
+        while(judge1==&quot;Y&quot;):
+            print(&quot;下面进入选课&quot;)
+            print(&quot;注:一个学期只能选2门学科!&quot;)
+            a.chaxun();b.chaxun();c.chaxun();d.chaxun();
+            学科编号a=input(&quot;请输入第一门学科编号(例如：001):&quot;)
+            学科编号1=int(学科编号a)
+            while(len(学科编号a)!=3 or 学科编号1 &lt; 1 or 学科编号1 &gt; 4):
+                print(&quot;学科编码识别错误，请重新输入：&quot;)
+                学科编号a=input(&quot;请输入第一门学科编号(例如：001):&quot;)
+                学科编号1=int(学科编号a)
+
+
+            学科编号b=input(&quot;请输入第二门学科编号(例如：001):&quot;)
+            学科编号2=int(学科编号b)
+            while(len(学科编号b)!=3 or 学科编号2 &lt; 1 or 学科编号2 &gt; 4 or 学科编号2==学科编号1):
+                print(&quot;学科编码识别错误或重复，请重新输入：&quot;)
+                学科编号b=input(&quot;请输入第二门学科编号(例如：001):&quot;)
+                学科编号2=int(学科编号b)
+
+
+            print(&quot;你选的科目为:\n&quot;+xingxi0[学科编号a]+&quot;  学科学分:&quot;+str(Tchuchun[学科编号a])+&quot;\n&quot;+xingxi0[学科编号b]+&quot;  学科学分:&quot;+str(Tchuchun[学科编号b]))
+            zong=Tchuchun[学科编号a]+Tchuchun[学科编号b]
+            print(&quot;你选课的总学分为:&quot;)
+            print(zong)
+            judge1=input(&quot;重新选择按Y,确认按任意键：&quot;)
+
+        if(judge1!= &quot;Y&quot;):
+            print(&quot;选课成功&quot;)
+#选课完成后科目人数增加   
+        if(学科编号1==1 or 学科编号2==1):
+            a.people()
+        if(学科编号1==2 or 学科编号2==2):
+            b.people()
+        if(学科编号1==3 or 学科编号2==3):
+            c.people()
+        if(学科编号1==4 or 学科编号2==4):
+            d.people()
+
+        wenjian=open(&quot;C://选课名单.txt&quot;,&quot;a&quot;)
+        wenjian.write(&quot;姓名:&quot;+name+&quot;，班级:&quot;+banji+&quot;，学号:&quot;+str(学号)+&quot;，所选课程：第一门:&quot;+xingxi0[学科编号a]+&quot;，第二门:&quot;+xingxi0[学科编号b]+&quot;\n&quot;)
+
+        wenjian.close()
+
+    elif(change==2):
+        print(&quot;欢迎进入老师页面&quot;)
+       #print(&quot;请输入你的账号&quot;) 
+       #print(&quot;登入成功&quot;)
+        print(&quot;已导入的教师名单有:&quot;)
+        a.chaxun();b.chaxun();c.chaxun();d.chaxun()</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/07/python/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -462,7 +607,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">这个人很懒&lt;br&gt;&lt;br&gt;什么都没有留下&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
